@@ -7,3 +7,6 @@ Route.post('sessions', 'SessionController.store')
 
 Route.post('password', 'FogotPasswordController.store')
 Route.put('password', 'FogotPasswordController.update')
+
+Route.get('/files/:id', 'FileController.show')
+Route.post('/files', 'FileController.store')
